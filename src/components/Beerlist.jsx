@@ -23,6 +23,7 @@ const BeerList = () => {
       });
   }, []);
 
+  //Function for Search individual item
   const handleSearch = () => {
     const filtered = beers.filter(beer =>
       beer.name.toLowerCase().includes(searchTerm.toLowerCase())
